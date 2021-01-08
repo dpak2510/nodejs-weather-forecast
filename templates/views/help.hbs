@@ -3,10 +3,13 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        {{>bootstrapCSS}}
     </head>
     <body>
-        {{>header}}
-        <p>{{helptext}}</p>
-        {{>footer}}
+        <div class="container">
+            {{>header}}
+            <p class="font-weight-light text-center" style="margin-top: 40px; margin-left:15px">{{helptext}}</p>
+            {{>footer}}
+        </div>
     </body>
 </html>

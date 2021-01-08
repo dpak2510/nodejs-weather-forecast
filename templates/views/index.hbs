@@ -3,18 +3,26 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        {{>bootstrapCSS}}
     </head>
     <body>
-        {{>header}}
-        <form>
-            <input placeholder="Location">
-            <button>Search</button>
-        </form>
-
-        <p id="message-1"></p>
-        <p id="message-2"></p>
-
-        {{>footer}}
+        <div class="container">
+            {{>header}}
+            <form>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Location">
+                    <div class="input-group-append">
+                        <button class="btn btn-success" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+            <p id="message-1"></p>
+            <p id="message-2"></p> 
+            <div class="fixed-bottom">
+                {{>footer}}
+            </div>
+        </div>
         <script src='/scripts/app.js'></script>
+        {{>bootstrapJS}}
     </body>
 </html>

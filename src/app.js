@@ -23,20 +23,20 @@ app.use(express.static(pathToPublic));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
-        name: 'Kakashi'
+        name: 'Kakashi Hatake'
     });
 });
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        name: 'Itachi'
+        name: 'Itachi Uchiha'
     });
 });
 app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         helptext: 'I am here to help you with my teleportation jutsu.',
-        name: 'Minato'
+        name: 'Minato Namikaze'
     });
 });
 
@@ -92,7 +92,7 @@ app.get('/help/*', (req, res) => {
 
 app.get('*', (req, res) => {
     res.render('error', {
-        title: 'Page not found',
+        title: '404',
         name: 'Dpak'
     });
 });

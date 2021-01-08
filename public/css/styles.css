@@ -5,3 +5,7 @@ h1 {
 img {
     width: 250px;
 }
+
+#message-1, #message-2 {
+    padding-left: 15px;
+}

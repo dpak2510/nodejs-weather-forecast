@@ -3,10 +3,13 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="/css/styles.css">
+        {{>bootstrapCSS}}
     </head>
     <body>
-        {{>header}}
-        <img src="/images/robot.png"></img>
-        {{>footer}}
+        <div class="container">
+            {{>header}}
+            <img class="img-thumbnail mx-auto" src="/images/itachi.jpg"></img>
+            {{>footer}}
+        </div>
     </body>
 </html>
